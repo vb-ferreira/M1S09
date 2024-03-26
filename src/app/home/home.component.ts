@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../card/card.component';
+// import { CardComponent } from '../shared/components/card/card.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CardComponent, CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, SharedModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
